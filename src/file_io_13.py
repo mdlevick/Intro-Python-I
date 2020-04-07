@@ -11,9 +11,9 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 
-foo_text = open("foo.txt", "r")
-print(foo_text.read())
-foo_text.close()
+FOO_TEXT = open("foo.txt", "r")
+print(FOO_TEXT.read())
+FOO_TEXT.close()
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -22,7 +22,7 @@ foo_text.close()
 
 # YOUR CODE HERE
 
-bar_text = open("bar.txt", "w")
-bar_text.write(
+BAR_TEXT = open("bar.txt", "w")
+BAR_TEXT.write(
     "But if you do, sir, I am for you. I serve as good a man as you.\n No better.\n Well, sir.")
-bar_text.close()
+BAR_TEXT.close()

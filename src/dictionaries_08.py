@@ -15,7 +15,7 @@ has the following keys:
  - name: a name string for this location
 """
 
-waypoints = [
+WAYPOINTS = [
     {
         "lat": -130,
         "lon": -121,
@@ -35,22 +35,22 @@ waypoints = [
 
 # Add a new waypoint to the list
 # YOUR CODE HERE
-waypoints.append({"lat": 44, "lon": 33, "name": "Fairy Mound"})
-print(waypoints)
+WAYPOINTS.append({"lat": 44, "lon": 33, "name": "Fairy Mound"})
+print(WAYPOINTS)
 
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # Note: It's okay to access the dictionary using bracket notation on the
-# waypoints list.
+# WAYPOINTS list.
 
 # YOUR CODE HERE
-waypoints[0]["lat"] = -130
-waypoints[0]["name"] = "not a real place"
+WAYPOINTS[0]["lat"] = -130
+WAYPOINTS[0]["name"] = "not a real place"
 
-print(waypoints)
+print(WAYPOINTS)
 
-# Write a loop that prints out all the field values for all the waypoints
+# Write a loop that prints out all the field values for all the WAYPOINTS
 # YOUR CODE HERE
 
-for item in waypoints:
+for item in WAYPOINTS:
     print(item["lat"], item["lon"], item["name"])

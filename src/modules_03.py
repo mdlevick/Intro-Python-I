@@ -4,7 +4,7 @@ which allows you to access many system specific variables and
 methods, and the os module, which gives you access to lower-
 level operating system functionality.
 """
-
+import os
 import sys
 # See docs for the sys module: https://docs.python.org/3.7/library/sys.html
 
@@ -12,7 +12,7 @@ import sys
 # YOUR CODE HERE
 
 for line in sys.argv:
-   print("File", line)
+    print("File", line)
 
 # Print out the OS platform you're using:
 # YOUR CODE HERE
@@ -24,7 +24,7 @@ print("Current Platform", sys.platform)
 
 print("Version of Python", sys.version)
 
-import os
+
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
 
 # Print the current process ID
@@ -39,5 +39,5 @@ print("Current Working Directory", os.getcwd())
 
 # Print out your machine's login name
 # YOUR CODE HERE
-name = os.getlogin()
-print(F"{name} is logged in")
+NAME = os.getlogin()
+print(F"{NAME} is logged in")
